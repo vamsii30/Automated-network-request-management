@@ -1,0 +1,58 @@
+1. Table Setup
+
+Built a custom table in the Global scope.
+
+Details configured:
+
+Label: Network Records
+
+Name: u_network_request_table
+
+2. Field Additions
+Configured multiple fields to store request information:
+
+Address → String
+
+Ticket ID → String
+
+Requested For → String
+
+Assignment Group → Reference (Group)
+
+Status → String
+
+Device Info → String
+
+Updates Count → Integer
+
+Assigned To → Reference (User)
+
+Enquiry Date → Date
+
+Customer File → String
+
+3. Approval Association
+
+Created a relationship “Approval Mapping.”
+
+Source: Network Records table
+
+Target: Approval [sysapproval_approver] table
+
+Applied a script condition to restrict approvals only to the specific request entry.
+
+4. Form Customization
+
+Modified the form via Form Designer.
+
+Added the Approval Mapping related list for easy access.
+
+Verified the related list is visible and correctly tied to records.
+
+5. Evidence & Documentation
+
+Exported an Update Set covering the table and related configuration.
+
+Stored screenshots of the table, fields, and form setup in the project directory.
+
+Updated project documentation with today’s progress.

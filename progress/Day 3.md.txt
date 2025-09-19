@@ -1,0 +1,58 @@
+Day 3 – Workflow Automation with Flow Designer
+
+Goal:
+Use Flow Designer to automate the handling of network requests by tying together catalog inputs, custom table entries, and the approval process.
+
+Activities Completed:
+
+1. Catalog Data Handling
+
+Used the Get Catalog Variables action to fetch requestor and request details.
+
+Captured key information: Name, Department, Email, Device Type, Location, and Justification.
+
+Confirmed all fields mapped correctly into the workflow actions.
+
+2. Record Management
+
+Added a Create Record step to insert entries into the custom Network table.
+
+Populated fields dynamically from catalog variables, ensuring schema alignment.
+
+3. Notifications
+
+Configured a Send Email step:
+
+Recipients included both the requester and approver.
+
+Subject and body text pulled directly from catalog values.
+
+Tested and enabled outbound email functionality on the instance.
+
+4. Approvals
+
+Integrated the Ask for Approval action on the created record.
+
+Set rules for Approve and Reject, with mode configured as Anyone Approves.
+
+Tied approval responses back into the workflow.
+
+5. Flow Conditions & Updates
+
+Added conditional checks:
+
+On approval → record status updated to “Approved.”
+
+On rejection → record flagged as “Rejected” and flow terminated.
+
+6. Testing & Fixes
+
+Ran full end-to-end submission tests.
+
+Issues resolved:
+
+Renamed variables to avoid duplication errors.
+
+Ignored warnings about unused journal fields.
+
+Enabled email sending when it was disabled in system properties.

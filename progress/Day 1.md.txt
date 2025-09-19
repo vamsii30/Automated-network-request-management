@@ -1,0 +1,50 @@
+Day 1 – Service Catalog Configuration
+
+Goal:
+Kick off the project by creating a Service Catalog entry to capture network-related service requests and configuring its supporting elements.
+
+Work Completed:
+
+1. Catalog Item Development
+
+Added a new catalog item titled “Network Request Form.”
+
+Structured it to gather key details from end users.
+
+2. Variable Setup
+
+Configured several types of fields:
+
+Text inputs → e.g., Office Location, Notes/Description.
+
+Reference lookup → Field for “Requested for” user.
+
+Dropdown → Device selection (Laptop, Router, Others, etc.).
+
+3. Variable Set
+
+Built a reusable Requester Details variable set, which can be plugged into other catalog items later.
+
+4. Catalog UI Policies
+
+Implemented rules to make the form more dynamic:
+
+Show the field “Other Device Details” only when “Device Type = Others.”
+
+Adjusted which fields are mandatory/visible based on user selections.
+
+5. Evidence & Documentation
+
+Screenshots captured for:
+
+Form design.
+
+Variable creation.
+
+Variable set details.
+
+UI policy demonstration.
+
+Exported the update set related to the Service Catalog module.
+
+Logged today’s progress in the project documentation.
